@@ -1,0 +1,32 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"nav"
+		"content"
+		"portfolio"
+		"team"
+		"footer";
+}
+
+.nav{
+	grid-area: nav;
+}
+
+.content{
+	grid-area: content;
+}
+
+.portfolio{
+	grid-area: portfolio;
+}
+
+.team{
+	grid-area: team;
+}
+
+.footer{
+	grid-area: footer;
+}
+

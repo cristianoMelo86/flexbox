@@ -1,0 +1,24 @@
+.nav{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	background-color: red;
+
+
+	h1{
+		width: 30%;
+		padding: 10px;
+		text-align: center;
+		
+		img{
+			max-width: 50%;
+		}
+	}
+
+	.navbar{
+		width: 70%;
+		background-color: gold;
+	}
+}
