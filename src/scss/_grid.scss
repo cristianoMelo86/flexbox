@@ -1,32 +1,75 @@
-.grid-container{
+.wrapper{
 	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 80px;
 	grid-template-areas: 
-		"nav"
-		"content"
-		"portfolio"
+		"header"
+		"main"
 		"team"
 		"footer";
 }
 
-.nav{
-	grid-area: nav;
+.header{
+	grid-area: header;
+	background-color: #AF7AC5;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	h1{
+		background-color: #C70039;
+		width: 30%;
+	}
 }
 
-.content{
-	grid-area: content;
-}
-
-.portfolio{
-	grid-area: portfolio;
+.main{
+	grid-area: main;
+	background-color: #16A085;
 }
 
 .team{
 	grid-area: team;
+	background-color: #FFC300;
 }
 
 .footer{
 	grid-area: footer;
+	background-color: #FF5733;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*  tablet 768px*/
+@media (min-width: 768px){
+	.wrapper{
+		grid-template-columns: 5% repeat(4, 1fr) 5%;
+		grid-template-areas: 
+			"header header header header header header"
+			".	main main team team ."
+			".	main main team team ."
+			"footer footer footer footer footer footer"
+			;
+		
+	}	
+}
+
+
+
+
+
+/*  desktop 1024px*/
+@media (min-width: 1024px){
+	.wrapper{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: 80px;
+	}	
+}
